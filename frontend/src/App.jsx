@@ -15,6 +15,7 @@ import CaseStudiesListPage from './pages/CaseStudiesListPage';
 import BookDemo from './pages/BookDemo';
 import LoginPage from './pages/LoginPage';
 import IntegrationsPage from './pages/IntegrationsPage';
+import BlogPage from './pages/BlogPage';
 import { productsData } from './data/productsData';
 import { caseStudiesData } from './data/caseStudiesData';
 import { solutionsData } from './data/solutionsData';
@@ -92,6 +93,8 @@ function App() {
         return <PricingPage />;
       case 'integrations':
         return <IntegrationsPage setView={handleSetView} />;
+      case 'blog':
+        return <BlogPage />;
       case 'book-demo-standalone':
         return <BookDemo isModal={false} />;
       default:
