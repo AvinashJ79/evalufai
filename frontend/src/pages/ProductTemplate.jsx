@@ -5,6 +5,7 @@ import {
   Plus, Minus, Zap, Shield, BarChart3, Globe,
   AlertCircle, Sparkles
 } from 'lucide-react';
+import ResourceBlogsSection from '../components/shared/ResourceBlogsSection';
 
 const SectionWrapper = ({ children, className = "" }) => (
   <section className={`py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto ${className}`}>
@@ -296,6 +297,11 @@ const ProductTemplate = ({ data, setView }) => {
           </div>
         </div>
       </SectionWrapper>
+
+      <ResourceBlogsSection
+        title={`${data.title} Resources`}
+        subtitle={`Learn practical strategies, benchmarks, and implementation guidance for ${data.title}.`}
+      />
 
       {/* 13. FINAL CTA */}
       <section className="py-24 px-4 bg-white">
